@@ -1,0 +1,219 @@
+@font-face {
+  font-family: fontA; /* Гарнитура шрифта */
+  src: url(fonts/19718.ttf); /* Путь к файлу со шрифтом */
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.transition_fast {
+    transition: 0.3s;
+}
+.transition_slow {
+    transition: 0.5s;
+}
+.button {
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+#header {
+  z-index: 999;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  left: 0px;
+}
+#logo {
+  font-size: 30pt;
+  color: #778899;
+  font-family: fontA;
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+#logo:hover {
+  color: #2F4F4F;
+  cursor: pointer;
+}
+.header_blocks {
+  right: 15px;
+  font-size: 20pt;
+  color: #778899;
+  font-family: fontA;
+  display: inline-block;
+  float: right;
+  margin-top: 29px;
+  margin-right: 30px;
+}
+.header_blocks:hover {
+  color: #00BFFF;
+  text-decoration: line-through;
+  text-shadow: #7B68EE;
+  -moz-text-shadow:0 0 20px #7B68EE;
+  -webkit-text-shadow:0 0 20px #7B68EE; 
+  text-shadow:0 0 20px #7B68EE;
+  cursor: pointer;
+}
+#block_mainimage {
+  left: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+  height: 100vh;
+}
+#image_main {
+  position: relative;
+  width: 100vw;
+  z-index: -5;
+  left: 0px;
+}
+#text_mainimage {
+  position: relative;
+  top: 50%;
+  z-index: 0;
+  color: red;
+}
+.block_package {
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 20px;
+}
+
+.block_package2 {
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 20px;
+  background-color: black;
+}
+
+.block_1 {
+  width: 45%;
+  display: inline-block;
+  margin-left: 10%;
+  margin-top: 25vh;
+  padding-right: 0px;
+  padding-left: 0px;
+  color: red;
+  border: 3px solid #696969;
+  -moz-border-radius: 12px;
+  -khtml-border-radius: 12px;
+  -webkit--border-radius: 12px;
+  border-radius: 12px;
+  vertical-align: top;
+}
+.block_2 {
+  width: 30%;
+  display: inline-block;
+  margin-left: 5%;
+  margin-top: 25vh;
+  padding-right: 0px;
+  padding-left: 0px;
+  color: red;
+  border: 3px solid #696969;
+  -moz-border-radius: 12px;
+  -khtml-border-radius: 12px;
+  -webkit--border-radius: 12px;
+  border-radius: 12px;
+  vertical-align: top;
+}
+.block_download {
+  padding-top: 30vh;
+}
+
+body {
+  background-color: #1f0828;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  outline: none;
+  color: none;
+}
+
+
+#mainimage {
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background-image: url(images/main.png);
+  background-size: auto 100vh;
+  background-position: center;
+}
+#roots {
+  left: 0;
+  top: 0;
+  height: 20vh;
+  background-image: url(images/roots.png);
+  background-size: auto 100vh;
+  background-position: center;
+}
+.zagolovok1 {
+  font-size: 20pt;
+  font-family: fontA;
+  color: #00BFFF;
+  text-shadow: #7B68EE;
+  -moz-text-shadow:0 0 20px #7B68EE;
+  -webkit-text-shadow:0 0 20px #7B68EE; 
+  text-shadow:0 0 20px #7B68EE; 
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.zagolovok2 {
+  font-size: 40pt;
+  font-family: fontA;
+  color: #00BFFF;
+  text-shadow: #7B68EE;
+  -moz-text-shadow:0 0 20px #7B68EE;
+  -webkit-text-shadow:0 0 20px #7B68EE; 
+  text-shadow:0 0 20px #7B68EE; 
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.text1{
+  color: #708090;
+  font-size: 17pt;
+  font-family: fontA;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.text2{
+  color: white;
+  font-size: 17pt;
+  font-family: fontA;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.hr1 {
+    border: none; /* Убираем границу */
+    background-color: #696969; /* Цвет линии */
+    color: 696969; /* Цвет линии для IE6-7 */
+    height: 3px; /* Толщина линии */
+    margin-left: 0;
+    margin-right: 40%;
+}
+#button_228 {
+  color: #2F4F4F;
+}
+#button_228:hover {
+  color: #FFFFFF;
+}
+

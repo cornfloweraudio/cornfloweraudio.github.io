@@ -1,0 +1,31 @@
+
+.parallax,
+.parallax__layer {
+  height: 100vh;
+}
+.parallax__layer {
+  position: fixed;
+  background-position: bottom center;
+  background-size: auto 100vh;
+  background-repeat: repeat-x;
+  width: 100%;
+  z-index: 10;
+}
+#parallax-0 {
+  background-image: url(images/1.png);
+}
+#parallax-1 {
+  background-image: url(images/2.png);
+}
+#parallax-2 {
+  background-image: url(images/3.png);
+}
+#parallax-3 {
+  background-image: url(images/4.png);
+}
+.maincontent {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+  background-color: #1f0828;
+}
