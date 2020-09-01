@@ -1,7 +1,8 @@
 @font-face {
-  font-family: fontA; /* Гарнитура шрифта */
+  font-family: 'fontA'; /* Гарнитура шрифта */
   src: url(fonts/19718.ttf); /* Путь к файлу со шрифтом */
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -41,6 +42,21 @@
   color: #2F4F4F;
   cursor: pointer;
 }
+#languageSelectionBox {
+  display: none;
+  padding-bottom: 20px;
+  width: 200px;
+  margin-top: 90px;
+  right: 15px;
+  background-color: black;
+  position: fixed;
+  z-index: 1000;
+  border: 3px solid #696969;
+  -moz-border-radius: 12px;
+  -khtml-border-radius: 12px;
+  -webkit--border-radius: 12px;
+  border-radius: 12px;
+}
 .header_blocks {
   right: 15px;
   font-size: 20pt;
@@ -58,6 +74,17 @@
   -moz-text-shadow:0 0 20px #7B68EE;
   -webkit-text-shadow:0 0 20px #7B68EE; 
   text-shadow:0 0 20px #7B68EE;
+  cursor: pointer;
+}
+.languageText {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 15pt;
+  color: #778899;
+  font-family: fontA;
+}
+.languageText:hover {
+  color: white;
   cursor: pointer;
 }
 #block_mainimage {
@@ -88,10 +115,19 @@
 .block_package2 {
   top: 0;
   width: 100%;
-  min-height: 100vh;
+  min-height: 30vh;
   padding-bottom: 20px;
   background-color: black;
 }
+
+.block_package3 {
+  top: 0;
+  width: 100%;
+  min-height: 50vh;
+  padding-top: 10vh;
+  background-color: #1f0828;
+}
+
 
 .block_1 {
   width: 45%;
@@ -123,8 +159,14 @@
   border-radius: 12px;
   vertical-align: top;
 }
+.block_1:hover {
+  border: 3px solid white;
+}
+.block_2:hover {
+  border: 3px solid white;
+}
 .block_download {
-  padding-top: 30vh;
+  padding-top: 10vh;
 }
 
 body {
@@ -185,18 +227,43 @@ a {
   margin-left: 20px;
   margin-right: 20px;
 }
+.zagolovok3 {
+  font-size: 40pt;
+  font-family: fontA;
+  color: #00BFFF;
+  text-shadow: #7B68EE;
+  -moz-text-shadow:0 0 20px #7B68EE;
+  -webkit-text-shadow:0 0 20px #7B68EE; 
+  text-shadow:0 0 20px #7B68EE; 
+  cursor: pointer;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.microzagolovok4{
+  font-size: 20pt;
+  font-family: fontA;
+  color: white;
+  text-shadow: #7B68EE;
+  -moz-text-shadow:0 0 20px #7B68EE;
+  -webkit-text-shadow:0 0 20px #7B68EE; 
+  text-shadow:0 0 20px #7B68EE; 
+  cursor: pointer;
+  margin-bottom: 15px;
+  max-width: 40vw;
+}
 .text1{
   color: #708090;
-  font-size: 17pt;
-  font-family: fontA;
+  font-size: 20pt;
+  font-family: CyrillicOld;
   margin-bottom: 15px;
   margin-left: 20px;
   margin-right: 20px;
 }
 .text2{
   color: white;
-  font-size: 17pt;
-  font-family: fontA;
+  font-size: 20pt;
+  font-family: CyrillicOld;
   margin-bottom: 15px;
   margin-top: 30px;
   margin-left: 20px;
@@ -215,5 +282,102 @@ a {
 }
 #button_228:hover {
   color: #FFFFFF;
+}
+#block_diagonal0 {
+  height: 15vh;
+  background: linear-gradient(to top left, black 50%, #1f0828 50%);
+}
+#block_diagonal1 {
+  height: 15vh;
+  background: linear-gradient(to top left, #1f0828 50%, black 50%);
+}
+#block_diagonal2 {
+  height: 6vh;
+  background: linear-gradient(to top right, #2F4F4F 50%, #1f0828 50%);
+}
+#block_diagonal3 {
+  height: 6vh;
+  background: linear-gradient(to top left, #1f0828 50%, #2F4F4F 50%);
+}
+#footer {
+  height: 10vh;
+  background-color: #2F4F4F;
+}
+#black_space{
+  height: 10vh;
+  background-color: black;
+}
+.contact_block_noborder {
+  display: inline-block;
+  width: 30vw;
+  margin-left: 10px;
+  margin-right: 10px;
+  vertical-align: top;
+}
+.contact_block_insideborder {
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  border: 3px solid #696969;
+  -moz-border-radius: 12px;
+  -khtml-border-radius: 12px;
+  -webkit--border-radius: 12px;
+  border-radius: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.contact_block_insideborder:hover {
+  border: 3px solid white;
+}
+.contact_block {
+  display: inline-block;
+  width: 30vw;
+  min-height: 30vh;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 3px solid #696969;
+  -moz-border-radius: 12px;
+  -khtml-border-radius: 12px;
+  -webkit--border-radius: 12px;
+  border-radius: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  vertical-align: top;
+}
+.contact_block:hover {
+  border: 3px solid white;
+}
+.contact_block_inside {
+  display: inline-block;
+  margin-top: 15px;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.contact_block_photo {
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 50%;
+  padding-right: 0;
+  padding-left: 0;
+  width: 100%;
+}
+
+.textWhite {
+  font-size: 20pt;
+  font-family: CyrillicOld;
+  color: white;
+  text-shadow: #7B68EE;
+  -moz-text-shadow:0 0 20px #7B68EE;
+  -webkit-text-shadow:0 0 20px #7B68EE; 
+  text-shadow:0 0 20px #7B68EE; 
+}
+
+.RUS {
+  display: none;
+}
+.ENG {
+  display: none;
 }
 
