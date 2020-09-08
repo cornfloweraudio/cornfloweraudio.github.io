@@ -3,6 +3,8 @@
   src: url(fonts/19718.ttf); /* Путь к файлу со шрифтом */
 }
 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +14,9 @@
 }
 .transition_slow {
     transition: 0.5s;
+}
+.transition_superslow {
+    transition: 2s;
 }
 .button {
   color: inherit;
@@ -300,7 +305,7 @@ a {
   background: linear-gradient(to top left, #1f0828 50%, #2F4F4F 50%);
 }
 #footer {
-  height: 10vh;
+  min-height: 5vh;
   background-color: #2F4F4F;
 }
 #black_space{
@@ -360,7 +365,7 @@ a {
   margin-right: 0;
   border-radius: 50%;
   padding-right: 0;
-  padding-left: 0;
+  padding-left: 20px;
   width: 100%;
 }
 
@@ -381,3 +386,24 @@ a {
   display: none;
 }
 
+#preloaderDiv {
+  background: rgb(34,110,195);
+background: linear-gradient(81deg, rgba(34,110,195,1) 0%, rgba(177,45,253,1) 100%);
+  position: fixed;
+  /* координаты положения */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  font-size: 70pt;
+  font-family: fontA;
+  color: white;
+  z-index: 1001;
+}
+
+#preloaderText {
+  padding-top: 35vh;
+  padding-bottom: 0vh;
+}

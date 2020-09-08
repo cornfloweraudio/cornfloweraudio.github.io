@@ -1,6 +1,8 @@
 let isOnBlackBox = false;
+let isOnSmorodinaText = false;
 let language = "Bel";
 let languageSelectorVisible = true;
+let loaded = false;
 
 
 function getCoords(elem) {
@@ -8,6 +10,7 @@ function getCoords(elem) {
 
   return box.top;
 }
+
 
 window.addEventListener('scroll', function() {
   if(getCoords(document.getElementById("blackBlock")) <= document.getElementById("header").offsetHeight && getCoords(document.getElementById("blackBlock")) > -document.getElementById("blackBlock").offsetHeight) {
@@ -20,6 +23,18 @@ window.addEventListener('scroll', function() {
     if(isOnBlackBox == true) {
       document.getElementById("header").style.backgroundColor = "black";
       isOnBlackBox = false;
+    }
+  }
+  if(getCoords(document.getElementById("infoDiv")) >= (document.getElementById("header").offsetHeight - document.getElementById("infoDiv").offsetHeight + document.documentElement.clientHeight*1/3) && getCoords(document.getElementById("infoDiv")) < document.documentElement.clientHeight*2/3) {
+    if(isOnSmorodinaText == false) {
+      document.getElementById("infoDiv").style.opacity = "1.0";
+      isOnSmorodinaText = true;
+    }
+  }
+  else{
+    if(isOnSmorodinaText == true) {
+      document.getElementById("infoDiv").style.opacity = "0.0";
+      isOnSmorodinaText = false;
     }
   }
 });
@@ -93,5 +108,25 @@ function setLanguage(lang) {
   localStorage.setItem('pageLanguage' , language);
 }
 
+function getParam(name){
+   if(name=(new RegExp('[?&]'+encodeURIComponent(name)+'=([^&]*)')).exec(location.search))
+      return decodeURIComponent(name[1]);
+}
+
 hide_unhide_languageBox();
-setLanguage(localStorage.getItem('pageLanguage'));
+let languageParam = getParam('lang');
+if(languageParam == undefined) {
+  setLanguage(localStorage.getItem('pageLanguage'));
+} else {
+  setLanguage(languageParam);
+}
+
+window.onload = function () {
+  document.getElementById("preloaderDiv").style.opacity = 0.0;
+    window.setTimeout(function () {
+      document.getElementById("preloaderDiv").style.display = "none";
+
+    }, 2000);
+}
+
+    
