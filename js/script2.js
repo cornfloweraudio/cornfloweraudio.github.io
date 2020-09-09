@@ -122,6 +122,7 @@ if(languageParam == undefined) {
 }
 
 window.onload = function () {
+  
   document.getElementById("preloaderDiv").style.opacity = 0.0;
     window.setTimeout(function () {
       document.getElementById("preloaderDiv").style.display = "none";
