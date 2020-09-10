@@ -532,3 +532,23 @@ background: linear-gradient(81deg, rgba(34,110,195,1) 0%, rgba(177,45,253,1) 100
     -moz-transform: rotate(360deg);
   }
 }
+
+
+a.lollink:link {
+  color: #87CEFA;
+}
+
+/* visited link */
+a.lollink:visited {
+  color: #87CEFA;
+}
+
+/* mouse over link */
+a.lollink:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a.lollink:active {
+  color: blue;
+}
